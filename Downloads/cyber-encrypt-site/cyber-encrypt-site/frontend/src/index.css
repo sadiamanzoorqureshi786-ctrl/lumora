@@ -1,0 +1,259 @@
+/* Add this to your main CSS file (e.g., App.css or index.css) */
+
+/* Matrix Theme Variables */
+:root {
+  --matrix-green: #0F0;
+  --matrix-green-dark: #00AA00;
+  --matrix-green-light: #00FF00;
+  --matrix-bg: rgba(0, 0, 0, 0.9);
+  --matrix-border: #0F0;
+}
+
+/* Global Background */
+body {
+  background: #000 !important;
+  color: #0F0 !important;
+  font-family: 'Courier New', monospace !important;
+}
+
+/* Content Cards */
+.card {
+  background: rgba(0, 0, 0, 0.85) !important;
+  border: 2px solid #0F0 !important;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3) !important;
+}
+
+.card-title {
+  color: #0F0 !important;
+  font-family: 'Courier New', monospace !important;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+/* Form Elements */
+.form-input,
+.form-select,
+.form-textarea {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 2px solid #0F0 !important;
+  color: #0F0 !important;
+  font-family: 'Courier New', monospace !important;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #00FF00 !important;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5) !important;
+}
+
+.form-label {
+  color: #0F0 !important;
+  font-family: 'Courier New', monospace !important;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Buttons */
+.btn {
+  font-family: 'Courier New', monospace !important;
+  font-weight: 900;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: #0F0 !important;
+  color: #000 !important;
+  border: 2px solid #0F0 !important;
+}
+
+.btn-primary:hover {
+  background: #00FF00 !important;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.8) !important;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent !important;
+  color: #0F0 !important;
+  border: 2px solid #0F0 !important;
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 255, 0, 0.1) !important;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5) !important;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Output Box */
+.output-box {
+  background: rgba(0, 0, 0, 0.9) !important;
+  border: 2px solid #0F0 !important;
+  color: #0F0 !important;
+  font-family: 'Courier New', monospace !important;
+  padding: 16px;
+  border-radius: 8px;
+  min-height: 100px;
+  overflow-y: auto;
+  word-break: break-all;
+}
+
+/* Sidebar */
+.sidebar {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-right: 2px solid #0F0 !important;
+}
+
+.sidebar-item {
+  color: #0F0 !important;
+  font-family: 'Courier New', monospace !important;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background: rgba(0, 255, 0, 0.1) !important;
+  border-left: 4px solid #0F0;
+  padding-left: 16px;
+}
+
+.sidebar-item.active {
+  background: rgba(0, 255, 0, 0.2) !important;
+  border-left: 4px solid #0F0;
+  padding-left: 16px;
+}
+
+/* Topbar */
+.topbar {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-bottom: 2px solid #0F0 !important;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h2 {
+  color: #0F0 !important;
+  font-family: 'Courier New', monospace !important;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+/* User Menu */
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #0F0 !important;
+  font-family: 'Courier New', monospace !important;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 255, 0, 0.2);
+  border: 2px solid #0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #0F0;
+}
+
+/* Content Area */
+.content-area {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #0F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 0, 0.5);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0F0;
+}
+
+/* Text Selection */
+::selection {
+  background: rgba(0, 255, 0, 0.3);
+  color: #0F0;
+}
+
+/* Placeholder Text */
+::placeholder {
+  color: rgba(0, 255, 0, 0.5) !important;
+  font-family: 'Courier New', monospace !important;
+}
+
+/* Links */
+a {
+  color: #0F0 !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #00FF00 !important;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+/* Animations */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+}
+
+.glow-animation {
+  animation: glow 2s infinite;
+}
